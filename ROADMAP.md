@@ -3,7 +3,7 @@
 Chaque ticket tient en 90 minutes au plus. Version démontrable à mi-parcours : P2-07 (API + interface de file de tickets sur la meilleure approche légère).
 
 ## Données et protocole
-- [ ] P2-01 Choix et préparation du jeu de données — jeu public FR + EN choisi et justifié dans SPEC.md, script de téléchargement à révision fixée, découpage train / validation / test stratifié et versionné, statistiques des classes publiées
+- [x] P2-01 Choix et préparation du jeu de données — jeu public FR + EN choisi et justifié dans SPEC.md, script de téléchargement à révision fixée, découpage train / validation / test stratifié et versionné, statistiques des classes publiées (fait le 2026-11-01)
 - [ ] P2-02 Protocole d'évaluation commun — module de métriques (F1 macro catégorie et priorité avec IC bootstrap, matrice de confusion, latence p50/p95, coût pour 1 000 tickets) testé, script qui note n'importe quelle approche sur le même jeu
 
 ## Les trois approches

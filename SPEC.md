@@ -44,14 +44,22 @@ flowchart LR
 ## Données
 Choix au ticket **P2-01**, justifié ici. Critères, dans l'ordre :
 1. jeu public avec licence qui autorise l'usage, téléchargeable par script ;
-2. tickets en français et en anglais (on écarte les autres langues) ;
+2. tickets en français et en anglais (on écarte les autres langues) ; à défaut, de vraies données multilingues ;
 3. une étiquette de catégorie ou de file **et** une étiquette de priorité ;
 4. assez d'exemples par classe pour un jeu de test qui donne des intervalles de confiance exploitables, et une réponse ou résolution par ticket pour la suggestion de réponse ;
 5. on documente les limites : données synthétiques ou réelles, déséquilibre des classes, qualité des étiquettes.
 
 Les données brutes ne sont pas versionnées (`data/raw/`). Le dépôt versionne le script de téléchargement, la révision exacte du jeu et les identifiants du découpage.
 
-*Jeu retenu : à compléter au ticket P2-01.*
+### Jeu retenu (P2-01, 01/11/2026)
+**Tobi-Bueck/customer-support-tickets** (Hugging Face), fichier `aa_dataset-tickets-multi-lang-5-2-50-version.csv`, révision `ddf1c81a5475992c4fa6752bf1e8b4e31f07bbeb`, vérifié par SHA-256 (`scripts/download_data.py`).
+- **Pourquoi** : c'est le seul jeu public trouvé qui réunit file (10 valeurs), priorité (3 valeurs : low, medium, high), type, réponse de l'agent et langue, avec assez d'exemples (28 587 tickets). Autre candidat examiné : tasksource/it-support-tickets (2 229 tickets, une seule étiquette, ni priorité ni réponse).
+- **Écart avec le cadrage** : le jeu ne contient **pas de français**, seulement l'anglais (57,1 %) et l'allemand (42,9 %), et aucune révision antérieure n'en contenait. Décision de Francis (01/11/2026) : garder l'anglais et l'allemand, de vrais tickets multilingues, plutôt qu'un test français traduit automatiquement. La fiche du jeu mentionne une autre version, sur Kaggle, avec du français : c'est une piste de suite.
+- **Licence** : CC BY-NC 4.0 (usage non commercial : compatible avec un projet de portfolio, à revoir pour un usage en entreprise).
+- **Nature** : la fiche met en avant le générateur de tickets synthétiques de l'auteur et annonce l'absence de données personnelles. On traite donc ces tickets comme **probablement synthétiques** : les scores obtenus ne garantissent pas les mêmes résultats sur de vrais tickets, plus bruités. C'est la première limite du projet.
+- **Qualité** : aucun corps vide, 15 doublons (corps identiques à la casse et aux espaces près) retirés avant le découpage, 3 838 sujets vides (le texte d'un ticket est le sujet suivi du corps), 7 réponses vides.
+- **Découpage** : stratifié par (langue, file), graine 2026, 70 / 15 / 15 → entraînement 19 998, validation 4 287, test 4 287 tickets. Identifiants versionnés dans `data/splits/`, statistiques complètes dans [docs/donnees.md](docs/donnees.md).
+- **Déséquilibre** : la file la plus fréquente (Technical Support) représente 29,3 % des tickets, la plus rare (General Inquiry) 1,4 %. D'où le choix du F1 macro, qui donne le même poids à chaque file.
 
 ## Protocole d'évaluation
 - **Découpage** stratifié par catégorie, graine fixe : entraînement / validation / test. Tous les réglages (hyperparamètres, exemples few-shot, seuil de confiance du routage hybride) se décident sur la validation ; le test ne sert qu'à la mesure finale.
