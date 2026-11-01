@@ -1,0 +1,93 @@
+{
+  "partie": "validation",
+  "grille": [
+    {
+      "c": 1.0,
+      "class_weight": null,
+      "f1_macro_file": 0.357,
+      "f1_macro_priorite": 0.5461,
+      "critere": 0.4516,
+      "secondes": 22.1
+    },
+    {
+      "c": 1.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.4842,
+      "f1_macro_priorite": 0.5766,
+      "critere": 0.5304,
+      "secondes": 20.1
+    },
+    {
+      "c": 4.0,
+      "class_weight": null,
+      "f1_macro_file": 0.4887,
+      "f1_macro_priorite": 0.5995,
+      "critere": 0.5441,
+      "secondes": 39.1
+    },
+    {
+      "c": 4.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.5672,
+      "f1_macro_priorite": 0.6072,
+      "critere": 0.5872,
+      "secondes": 29.9
+    },
+    {
+      "c": 16.0,
+      "class_weight": null,
+      "f1_macro_file": 0.5572,
+      "f1_macro_priorite": 0.6227,
+      "critere": 0.5899,
+      "secondes": 51.6
+    },
+    {
+      "c": 16.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.6009,
+      "f1_macro_priorite": 0.6307,
+      "critere": 0.6158,
+      "secondes": 35.2
+    },
+    {
+      "c": 64.0,
+      "class_weight": null,
+      "f1_macro_file": 0.5829,
+      "f1_macro_priorite": 0.6252,
+      "critere": 0.604,
+      "secondes": 48.0
+    },
+    {
+      "c": 64.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.6087,
+      "f1_macro_priorite": 0.6289,
+      "critere": 0.6188,
+      "secondes": 40.7
+    },
+    {
+      "c": 256.0,
+      "class_weight": null,
+      "f1_macro_file": 0.5961,
+      "f1_macro_priorite": 0.6175,
+      "critere": 0.6068,
+      "secondes": 42.2
+    },
+    {
+      "c": 256.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.6117,
+      "f1_macro_priorite": 0.6152,
+      "critere": 0.6135,
+      "secondes": 9289.9
+    }
+  ],
+  "retenu": {
+    "c": 64.0,
+    "class_weight": "balanced",
+    "f1_macro_file": 0.6087,
+    "f1_macro_priorite": 0.6289,
+    "critere": 0.6188,
+    "secondes": 40.7
+  }
+}

@@ -1,5 +1,11 @@
 # JOURNAL
 
+## 2026-11-01 — P2-03 Base TF-IDF + régression logistique
+- Fait : base TF-IDF + régression logistique (un modèle pour la file, un pour la priorité, probabilité de la file comme confiance) ; réglage de C et de la pondération des classes sur la validation seulement (scripts/tune_tfidf.py) ; mesure unique sur le test.
+- Chiffre mesuré : test : F1 macro file 0,588 (IC 0,565–0,606) et priorité 0,615 (IC 0,600–0,629), contre 0,045 et 0,195 pour la référence « majorité » ; latence p95 2,5 ms par ticket sur CPU, coût LLM nul
+- Décision technique : réglage choisi sur la validation (C = 64, classes pondérées) et test lu une seule fois : le score publié reste légèrement sous celui de la validation (0,588 contre 0,609), mais il n'est pas optimiste.
+- Visuel disponible : aucun
+
 ## 2026-11-01 — P2-02 Protocole d'évaluation commun
 - Fait : module evaluation.py commun à toutes les approches (F1 macro file et priorité avec IC bootstrap, exactitude, F1 par file, matrices de confusion, latence p50/p95, coût pour 1 000 tickets, part sans LLM) ; interface Classifier / Prediction ; script scripts/evaluate.py ; référence triviale « majorité » ; 8 tests sur des valeurs calculées à la main.
 - Chiffre mesuré : référence « majorité » sur la validation : exactitude file 29,3 % mais F1 macro file 0,045 (IC 0,044–0,047), F1 macro priorité 0,194 (IC 0,189–0,199) ; test : 0,045 et 0,195

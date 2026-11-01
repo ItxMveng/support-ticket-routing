@@ -12,10 +12,12 @@ from pathlib import Path
 
 from support_ticket_routing.data import Ticket, read_split, read_tickets, select
 from support_ticket_routing.evaluation import Classifier, MajorityClassifier, evaluate
+from support_ticket_routing.tfidf import TfidfClassifier
 
 ROOT = Path(__file__).resolve().parents[1]
 APPROCHES: dict[str, Callable[[Sequence[Ticket]], Classifier]] = {
     "majorite": MajorityClassifier,
+    "tfidf": TfidfClassifier,
 }
 
 
