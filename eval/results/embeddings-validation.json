@@ -1,0 +1,172 @@
+{
+  "approche": "embeddings",
+  "partie": "validation",
+  "tickets": 4287,
+  "f1_macro_file": {
+    "value": 0.353701186915634,
+    "low": 0.33282217807801523,
+    "high": 0.3755401210000655
+  },
+  "f1_macro_priorite": {
+    "value": 0.43179503214627335,
+    "low": 0.4165090586427439,
+    "high": 0.4453699024180161
+  },
+  "exactitude_file": 0.430604152087707,
+  "exactitude_priorite": 0.48915325402379284,
+  "f1_par_file": {
+    "Billing and Payments": 0.706855791962175,
+    "Customer Service": 0.31746031746031744,
+    "General Inquiry": 0.15384615384615385,
+    "Human Resources": 0.256,
+    "IT Support": 0.22685788787483702,
+    "Product Support": 0.3160726294552791,
+    "Returns and Exchanges": 0.26666666666666666,
+    "Sales and Pre-Sales": 0.18652849740932642,
+    "Service Outages and Maintenance": 0.575,
+    "Technical Support": 0.5317239244815847
+  },
+  "confusion_file": {
+    "Billing and Payments": {
+      "Billing and Payments": 299,
+      "Customer Service": 36,
+      "General Inquiry": 0,
+      "Human Resources": 1,
+      "IT Support": 5,
+      "Product Support": 16,
+      "Returns and Exchanges": 3,
+      "Sales and Pre-Sales": 2,
+      "Service Outages and Maintenance": 3,
+      "Technical Support": 53
+    },
+    "Customer Service": {
+      "Billing and Payments": 36,
+      "Customer Service": 190,
+      "General Inquiry": 1,
+      "Human Resources": 3,
+      "IT Support": 33,
+      "Product Support": 122,
+      "Returns and Exchanges": 15,
+      "Sales and Pre-Sales": 8,
+      "Service Outages and Maintenance": 11,
+      "Technical Support": 221
+    },
+    "General Inquiry": {
+      "Billing and Payments": 2,
+      "Customer Service": 10,
+      "General Inquiry": 6,
+      "Human Resources": 1,
+      "IT Support": 7,
+      "Product Support": 11,
+      "Returns and Exchanges": 1,
+      "Sales and Pre-Sales": 0,
+      "Service Outages and Maintenance": 0,
+      "Technical Support": 22
+    },
+    "Human Resources": {
+      "Billing and Payments": 6,
+      "Customer Service": 11,
+      "General Inquiry": 0,
+      "Human Resources": 16,
+      "IT Support": 4,
+      "Product Support": 6,
+      "Returns and Exchanges": 3,
+      "Sales and Pre-Sales": 1,
+      "Service Outages and Maintenance": 1,
+      "Technical Support": 38
+    },
+    "IT Support": {
+      "Billing and Payments": 18,
+      "Customer Service": 44,
+      "General Inquiry": 2,
+      "Human Resources": 2,
+      "IT Support": 87,
+      "Product Support": 71,
+      "Returns and Exchanges": 9,
+      "Sales and Pre-Sales": 3,
+      "Service Outages and Maintenance": 8,
+      "Technical Support": 271
+    },
+    "Product Support": {
+      "Billing and Payments": 22,
+      "Customer Service": 87,
+      "General Inquiry": 3,
+      "Human Resources": 5,
+      "IT Support": 45,
+      "Product Support": 235,
+      "Returns and Exchanges": 18,
+      "Sales and Pre-Sales": 10,
+      "Service Outages and Maintenance": 8,
+      "Technical Support": 354
+    },
+    "Returns and Exchanges": {
+      "Billing and Payments": 11,
+      "Customer Service": 32,
+      "General Inquiry": 0,
+      "Human Resources": 1,
+      "IT Support": 6,
+      "Product Support": 40,
+      "Returns and Exchanges": 44,
+      "Sales and Pre-Sales": 4,
+      "Service Outages and Maintenance": 1,
+      "Technical Support": 77
+    },
+    "Sales and Pre-Sales": {
+      "Billing and Payments": 8,
+      "Customer Service": 41,
+      "General Inquiry": 1,
+      "Human Resources": 0,
+      "IT Support": 5,
+      "Product Support": 26,
+      "Returns and Exchanges": 3,
+      "Sales and Pre-Sales": 18,
+      "Service Outages and Maintenance": 2,
+      "Technical Support": 34
+    },
+    "Service Outages and Maintenance": {
+      "Billing and Payments": 3,
+      "Customer Service": 8,
+      "General Inquiry": 0,
+      "Human Resources": 0,
+      "IT Support": 12,
+      "Product Support": 6,
+      "Returns and Exchanges": 3,
+      "Sales and Pre-Sales": 1,
+      "Service Outages and Maintenance": 92,
+      "Technical Support": 48
+    },
+    "Technical Support": {
+      "Billing and Payments": 23,
+      "Customer Service": 98,
+      "General Inquiry": 5,
+      "Human Resources": 10,
+      "IT Support": 48,
+      "Product Support": 167,
+      "Returns and Exchanges": 15,
+      "Sales and Pre-Sales": 8,
+      "Service Outages and Maintenance": 21,
+      "Technical Support": 859
+    }
+  },
+  "confusion_priorite": {
+    "high": {
+      "high": 949,
+      "low": 83,
+      "medium": 619
+    },
+    "low": {
+      "high": 222,
+      "low": 140,
+      "medium": 514
+    },
+    "medium": {
+      "high": 607,
+      "low": 145,
+      "medium": 1008
+    }
+  },
+  "latence_p50_ms": 24.606100050732493,
+  "latence_p95_ms": 36.21147997910157,
+  "part_sans_llm": 1.0,
+  "cout_1000_tickets_usd": 0.0
+}

@@ -10,14 +10,26 @@ import json
 from collections.abc import Callable, Sequence
 from pathlib import Path
 
+import numpy as np
+
 from support_ticket_routing.data import Ticket, read_split, read_tickets, select
+from support_ticket_routing.embeddings import DEFAULT_MODEL, EmbeddingClassifier, cache_file
 from support_ticket_routing.evaluation import Classifier, MajorityClassifier, evaluate
 from support_ticket_routing.tfidf import TfidfClassifier
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def embeddings(train: Sequence[Ticket]) -> Classifier:
+    """Réutilise les vecteurs d'entraînement en cache (scripts/embed_splits.py) s'ils existent."""
+    cached = cache_file(ROOT / "data" / "processed" / "embeddings", DEFAULT_MODEL, "train")
+    return EmbeddingClassifier(train, train_vectors=np.load(cached) if cached.exists() else None)
+
+
 APPROCHES: dict[str, Callable[[Sequence[Ticket]], Classifier]] = {
     "majorite": MajorityClassifier,
     "tfidf": TfidfClassifier,
+    "embeddings": embeddings,
 }
 
 

@@ -1,0 +1,255 @@
+{
+  "partie": "validation",
+  "grille": [
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 1.0,
+      "class_weight": null,
+      "f1_macro_file": 0.2729,
+      "f1_macro_priorite": 0.3807,
+      "critere": 0.3268,
+      "secondes": 2.0
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 1.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2687,
+      "f1_macro_priorite": 0.4153,
+      "critere": 0.342,
+      "secondes": 2.0
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 4.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3009,
+      "f1_macro_priorite": 0.3857,
+      "critere": 0.3433,
+      "secondes": 3.3
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 4.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2675,
+      "f1_macro_priorite": 0.4165,
+      "critere": 0.342,
+      "secondes": 2.5
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 16.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3191,
+      "f1_macro_priorite": 0.3932,
+      "critere": 0.3562,
+      "secondes": 4.3
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 16.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2678,
+      "f1_macro_priorite": 0.4159,
+      "critere": 0.3418,
+      "secondes": 3.6
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 64.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3183,
+      "f1_macro_priorite": 0.392,
+      "critere": 0.3551,
+      "secondes": 4.3
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 64.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2636,
+      "f1_macro_priorite": 0.4157,
+      "critere": 0.3397,
+      "secondes": 5.3
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 256.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3189,
+      "f1_macro_priorite": 0.3893,
+      "critere": 0.3541,
+      "secondes": 4.8
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 256.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2625,
+      "f1_macro_priorite": 0.4143,
+      "critere": 0.3384,
+      "secondes": 6.2
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 1024.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3164,
+      "f1_macro_priorite": 0.3928,
+      "critere": 0.3546,
+      "secondes": 7.2
+    },
+    {
+      "modele": "minishlab/potion-multilingual-128M",
+      "dimension": 256,
+      "c": 1024.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2615,
+      "f1_macro_priorite": 0.4142,
+      "critere": 0.3378,
+      "secondes": 8.9
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 1.0,
+      "class_weight": null,
+      "f1_macro_file": 0.2866,
+      "f1_macro_priorite": 0.397,
+      "critere": 0.3418,
+      "secondes": 6.5
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 1.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.272,
+      "f1_macro_priorite": 0.4363,
+      "critere": 0.3542,
+      "secondes": 6.7
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 4.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3154,
+      "f1_macro_priorite": 0.4152,
+      "critere": 0.3653,
+      "secondes": 30.5
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 4.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2859,
+      "f1_macro_priorite": 0.4457,
+      "critere": 0.3658,
+      "secondes": 15.1
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 16.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3345,
+      "f1_macro_priorite": 0.4234,
+      "critere": 0.379,
+      "secondes": 16.6
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 16.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2907,
+      "f1_macro_priorite": 0.4476,
+      "critere": 0.3692,
+      "secondes": 11.9
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 64.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3471,
+      "f1_macro_priorite": 0.4267,
+      "critere": 0.3869,
+      "secondes": 17.9
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 64.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2943,
+      "f1_macro_priorite": 0.4522,
+      "critere": 0.3732,
+      "secondes": 14.8
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 256.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3537,
+      "f1_macro_priorite": 0.4318,
+      "critere": 0.3927,
+      "secondes": 23.3
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 256.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.295,
+      "f1_macro_priorite": 0.4486,
+      "critere": 0.3718,
+      "secondes": 22.7
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 1024.0,
+      "class_weight": null,
+      "f1_macro_file": 0.3527,
+      "f1_macro_priorite": 0.4275,
+      "critere": 0.3901,
+      "secondes": 24.3
+    },
+    {
+      "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "dimension": 384,
+      "c": 1024.0,
+      "class_weight": "balanced",
+      "f1_macro_file": 0.2941,
+      "f1_macro_priorite": 0.4543,
+      "critere": 0.3742,
+      "secondes": 20.7
+    }
+  ],
+  "retenu": {
+    "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "dimension": 384,
+    "c": 256.0,
+    "class_weight": null,
+    "f1_macro_file": 0.3537,
+    "f1_macro_priorite": 0.4318,
+    "critere": 0.3927,
+    "secondes": 23.3
+  }
+}

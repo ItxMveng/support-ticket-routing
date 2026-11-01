@@ -1,5 +1,11 @@
 # JOURNAL
 
+## 2026-11-01 — P2-04 Embeddings multilingues + classifieur
+- Fait : approche embeddings multilingues gelés (fastembed) + régression logistique, file et priorité ; trois modèles légers examinés (mpnet écarté pour sa lenteur, MiniLM et potion réglés) ; cache des vecteurs ; réglage sur la validation, grille étendue quand l'optimum tombait au bord ; mesure unique sur le test.
+- Chiffre mesuré : test MiniLM (C = 256) : F1 macro file 0,344 (IC 0,322–0,363) et priorité 0,419 (IC 0,403–0,432), contre 0,588 et 0,615 pour TF-IDF ; latence p95 31 ms contre 2,5 ms ; 18,5 % des tickets de test dépassent les 128 jetons lus par MiniLM
+- Décision technique : TF-IDF reste le modèle léger du routage hybride : meilleur sur toutes les files, environ 12 fois plus rapide au p95 et sans modèle de 220 Mo dans l'image ; les embeddings gelés ne sont pas retenus pour la classification.
+- Visuel disponible : aucun
+
 ## 2026-11-01 — P2-03 Base TF-IDF + régression logistique
 - Fait : base TF-IDF + régression logistique (un modèle pour la file, un pour la priorité, probabilité de la file comme confiance) ; réglage de C et de la pondération des classes sur la validation seulement (scripts/tune_tfidf.py) ; mesure unique sur le test.
 - Chiffre mesuré : test : F1 macro file 0,588 (IC 0,565–0,606) et priorité 0,615 (IC 0,600–0,629), contre 0,045 et 0,195 pour la référence « majorité » ; latence p95 2,5 ms par ticket sur CPU, coût LLM nul

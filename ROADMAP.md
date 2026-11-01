@@ -8,7 +8,7 @@ Chaque ticket tient en 90 minutes au plus. Version démontrable à mi-parcours :
 
 ## Les trois approches
 - [x] P2-03 Base TF-IDF + régression logistique — entraînement reproductible, F1 macro mesurés sur la validation et le test, résultats dans eval/results/ (fait le 2026-11-01)
-- [ ] P2-04 Embeddings multilingues + classifieur — même protocole, comparaison chiffrée avec TF-IDF, choix du modèle léger justifié
+- [x] P2-04 Embeddings multilingues + classifieur — même protocole, comparaison chiffrée avec TF-IDF, choix du modèle léger justifié (fait le 2026-11-01)
 - [ ] P2-05 LLM few-shot derrière l'interface LLMProvider — prompt few-shot (exemples tirés de l'entraînement), sortie structurée validée par Pydantic, mesure sur l'échantillon de test fixé, coût pour 1 000 tickets
 
 ## Version démontrable
