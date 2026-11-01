@@ -1,0 +1,9 @@
+.venv/
+.git/
+.env
+data/
+models/
+**/__pycache__/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
